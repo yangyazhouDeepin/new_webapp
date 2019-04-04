@@ -5,6 +5,7 @@ import store from "./store/index"
 import util from '@/utils/util'
 import 'lib-flexible/flexible'
 import '@/assets/stylus/index.styl'
+import 'animate.css'
 
 import DefaultImg from '@/components/DefaultImg'
 

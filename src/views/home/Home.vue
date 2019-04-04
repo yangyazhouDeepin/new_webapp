@@ -99,4 +99,8 @@ export default {
                         height 5px
                         background-color $fc1
                         border-radius 4px
+    .today-count
+        height 70px
+        line-height 70px
+        font-size 22px
 </style>

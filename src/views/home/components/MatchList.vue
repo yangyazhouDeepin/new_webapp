@@ -8,7 +8,7 @@ div.match-list(:class="type")
         div.title
             div.league {{ match.leagueName }}
             div.time {{ util.dateFormate( new Date(match.matchTime), 'hh:mm' ) }}
-                span(:class="{red: type === 'going'}") {{typeText[type].status(match.matchTime)}}
+                span(:class="{tr: type === 'going'}") {{typeText[type].status(match.matchTime)}}
             div.hot 123人
         div.detail
             div.host

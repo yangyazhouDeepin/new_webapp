@@ -1,4 +1,4 @@
-import { todayAll } from '@/api/home'
+import { todayAll } from '@/api/modules/home'
 const defaultValue = {
     count: 0,
     matches: []

@@ -44,10 +44,3 @@ export default {
     }
 }
 </script>
-
-<style lang="stylus">
-.today-count
-    height 70px
-    line-height 70px
-    font-size 22px
-</style>

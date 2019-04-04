@@ -1,4 +1,10 @@
-@import './reset.styl';
+@import './reset.styl'
+@import './border.styl'
+@font-face
+  font-family 'Barlow Condensed'
+  src url('./fonts/BarlowCondensed-Medium.ttf')
+.num
+  font-family "Barlow Condensed", "Microsoft YaHei"
 a
     text-decoration none
 html, body
@@ -8,10 +14,16 @@ body
     color  $fc1
 .num
   font-family "Barlow Condensed", "Microsoft YaHei"
-.red
+.tr
     color $red
-.blue
+.tb
     color $blue
+.tr2
+    color $red2
+.tb2
+    color $blue2
+.fc3
+    color $fc3
 .tr
     text-align right
 .tl
@@ -22,3 +34,8 @@ body
     white-space nowrap
     text-overflow ellipsis
     overflow hidden
+.hide
+    display none
+.bg-m-10
+    background #F2F3F4
+    height 10px

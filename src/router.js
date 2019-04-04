@@ -22,5 +22,28 @@ export default new Router({
                 }
             ]
         },
+        {
+            path: '/live/:id',
+            name: 'live',
+            redirect: '/live/:id/matchDetail',
+            component: () => import('./views/live/Live'),
+            children: [
+                {
+                    path: 'matchDetail',
+                    name: 'matchDetail',
+                    component: () => import('./views/live/components/MatchDetail.vue')
+                },
+                {
+                    path: '/liveAnimate',
+                    name: 'liveAnimate',
+                    component: () => import('./views/live/components/LiveAnimate.vue')
+                },
+                {
+                    path: '/liveVideo',
+                    name: 'liveVideo',
+                    component: () => import('./views/live/components/LiveVideo.vue')
+                }
+            ]
+        }
     ]
 });
